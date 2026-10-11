@@ -1,0 +1,4 @@
+SELECT Id, Status, JobType, ApexClass.Name, CreatedDate
+FROM AsyncApexJob
+WHERE JobType = 'Queueable'
+ORDER BY CreatedDate DESC
